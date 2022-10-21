@@ -9,7 +9,7 @@ public class PrivateAirport extends Airport{
 
     }
 
-    public PrivateAirport(String name, String city, String country, Companie[] listCompanies, String[] enterprises) {
+    public PrivateAirport(String name, String city, String country, Company[] listCompanies, String[] enterprises) {
         super(name, city, country, listCompanies);
         this.enterprises = enterprises;
         this.enterpriseCounter = enterprises.length;

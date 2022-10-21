@@ -5,7 +5,7 @@ public class PublicAirport extends Airport{
         super(name, city, country);
     }
 
-    public PublicAirport(String name, String city, String country, Companie[] listCompanies, double subvention) {
+    public PublicAirport(String name, String city, String country, Company[] listCompanies, double subvention) {
         super(name, city, country, listCompanies);
         this.subvention = subvention;
     }

@@ -2,7 +2,7 @@ public class Airport {
     private String name;
     private String city;
     private String country;
-    private Companie[] listCompanies = new Companie[10];
+    private Company[] listCompanies = new Company[10];
     private int companieNumber;
 
     public Airport(String name, String city, String country) {
@@ -12,7 +12,7 @@ public class Airport {
         this.companieNumber = 0;
     }
 
-    public Airport(String name, String city, String country, Companie[] listCompanies) {
+    public Airport(String name, String city, String country, Company[] listCompanies) {
         this.name = name;
         this.city = city;
         this.country = country;
@@ -20,8 +20,8 @@ public class Airport {
         this.companieNumber = listCompanies.length;
     }
 
-    public void insertCompanie(Companie companie) {
-        listCompanies[companieNumber] = companie;
+    public void insertCompanie(Company company) {
+        listCompanies[companieNumber] = company;
         companieNumber++;
     }
 
@@ -37,7 +37,7 @@ public class Airport {
         return country;
     }
 
-    public Companie[] getListCompanies() {
+    public Company[] getListCompanies() {
         return listCompanies;
     }
 
@@ -45,14 +45,14 @@ public class Airport {
         return companieNumber;
     }
 
-    public Companie getCompanie(int i) {
+    public Company getCompanie(int i) {
         return listCompanies[i];
     }
 
-    public Companie getCompanie(String name) {
-        for(Companie companie: listCompanies) {
-            if(companie.getName().equals(name)) {
-                return companie;
+    public Company getCompanie(String name) {
+        for(Company company : listCompanies) {
+            if(company.getName().equals(name)) {
+                return company;
             }
         }
         return null;
